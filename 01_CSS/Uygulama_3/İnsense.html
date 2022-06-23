@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+
+        #showcase {
+            background: url(bileklik.jpg);
+            height: 700px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #how-it-works {
+            background-color: #FC997C;
+            padding: 10px;
+        }
+
+        .main-header {
+            background-color: #FC997C;
+            padding: 8px 16px;
+        }
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 99px);
+            text-align: right;
+        }
+        .main-nav__items {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .main-nav__item{
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        main-header__logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item a  {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .main-nav__item a:hover, .main-nav__item:hover::before {
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:active , .main-nav__item:active::before {
+            color: #fff;
+        }
+
+        .main-nav__item::before {
+            content: '\2023';
+            color: #fff;
+        }
+
+        .main-nav__item--login a {
+            color: #fff;
+            background-color: #2E4C6D; 
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #2E4C6D;
+        }
+
+        .main-nav__item--login a:hover {
+            color: #2E4C6D;
+            border: 2px solid #2E4C6D;
+            background-color: #fff;
+        }
+
+        .main-nav__item--login::before {
+            content: none;
+        }
+
+        .row {
+            margin-bottom: 40px;
+        }
+
+        #how-it-works {
+            padding: 10px;
+            text-align: center;
+        }
+
+        #how-it-works h2 {
+            color: #3e4555;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .col {
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .icon-box h3 {
+            color: crimson;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header">
+        <a href="#" class="main-header__logo">İnsense Yazılım</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Anasayfa</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Hakkımızda</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Üye ol</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="showcase">
+            <h1>İnsense Yazılıma Hoşgeldiniz!</h1>
+        </section>
+        <section id="how-it-works">
+        <div  class="row">
+        <h2>Nasıl Çalışır?</h2>
+            <p>Akademisyenler tarafından 3 yıllık çalışma sonucunda üretilen Dünya literatüründe ilk olan yazılımımızı kullanarak yaşamınızda konfora ulaşın.</p>
+        </div>
+    <div class="row">
+    <div class="icon-box col">
+        <i class="fas fa-sign-in-alt fa fa-3x"></i>
+        <h3>Özellik 1</h3>
+        <p>Epilepsi nöbeti gelmeden 180 saniye önce SİZİ ve yakınlarınızı UYARIR.</p>
+    </div>
+
+    <div class="icon-box col">
+        <i class="fab fa-buffer fa-3x"></i>
+        <h3>Özellik 2</h3>
+        <p>Epilepsi nöbet anında SİZİ ve yakınlarınızı UYARARAK bulunduğunuz yeri haritada mesaj ile bildirir.</p>
+    </div>
+
+    <div class="icon-box col">
+        <i class="far fa-smile fa-3x"></i>
+        <h3>Özellik 3</h3>
+        <p>Epilepsi nöbetlerinizin türlerini süresini vb bilgilerini doktorunuzla güvenle PAYLAŞMANIZI sağlar.</p>
+    </div>
+    </div>
+           
+        </section>
+    </main>
+
+
+
+
+
+</body>
+</html>
